@@ -26,10 +26,11 @@ header{
   background-position: left;
   background-size: contain;
 }
+
 .ourstory{
-height:500px;
-background-image: url("../images/backgroundflowers.svg");
-background-size: contain;
+  height:500px;
+  background-image: url("../images/backgroundflowers.svg");
+  background-size: contain;
   .prof-pic{
     background-image: url("../images/frame.svg");
     background-repeat: no-repeat;
@@ -49,7 +50,6 @@ background-size: contain;
         background-repeat: no-repeat;
         display:block;
       }
-
   }
   span{
     font-family: "American Typewriter";
@@ -57,9 +57,9 @@ background-size: contain;
     display: inline-block;
     font-size: 18px;
     text-align: center;
-
   }
 }
+
 .border-img{
 height:145px;
 background-image: url("../images/borderflower.svg");
@@ -69,14 +69,12 @@ background-repeat: repeat-x;
   background-size: cover;
   background-repeat: no-repeat;
   border: solid 15px white;
-
 }
 .topleft-img{
   background-image: url("../images/photo-1455853659719-4b521eebc76d.jpeg");
   background-attachment: fixed;
   height:350px;
   border-right: solid 7px white;
-
 }
 
 .topbottom-img{
@@ -84,14 +82,13 @@ background-repeat: repeat-x;
   background-attachment: fixed;
   height:350px;
   border-right: solid 7px white;
-
 }
 
 .topright-img{
   background-image: url("../images/photo-1454334281609-87a89762912c.jpeg");
-background-attachment: fixed;
-background-position: right top;
-    background-size: contain;
+  background-attachment: fixed;
+  background-position: right top;
+  background-size: contain;
   height:700px;
   border-left: solid 7px white;
 }
@@ -175,9 +172,6 @@ footer{
 
 }
 .cart{
-  position: fixed;
-  width: 40%;
-  top:150px;
   border: 2px solid black;
   border-radius: 10px;
   padding:15px;
@@ -219,7 +213,7 @@ footer{
   text-transform: uppercase;
   color: #93649C;
   margin-top: 5px;
-  position: fixed;
+
   top:130px;
 }
 ul{
@@ -231,9 +225,7 @@ ul{
   font-weight: bold;
   text-transform: uppercase;
 }
-.bottom-pic{
 
-}
 @media(max-width:767px){
   .order-row{
     padding-top: 8px !important;

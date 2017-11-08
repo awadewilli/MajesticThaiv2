@@ -6,12 +6,57 @@ import leaf from './images/leaf.svg';
 import utensil from './images/utensils.svg';
 import bowl from './images/bowl.svg';
 
+function OrderForm(props){
+  return <div className="container-fluid">
+            <div className="row order-page">
+              <div className="col-md-8 col-sm-8 col-xs-12">
+                <ul>
+                  <li className="menu-item">
+                    <span className="item">Item1</span>
+                    <span className="price">$99.99</span>
+                    <p>lipsum lipsum lipsum</p>
+                    <button className="btn btn-primary">Add</button>
+                  </li>
+                </ul>
+              </div>
+              <div className="col-md-4 col-sm-4 col-xs-12">
+                <div className="row">
+                  <h3 className="cart-name">Your Order</h3>
+                  <div className="cart col-xs-12">
+                    <div id="order-items" className="row">
+                        <div className="col-xs-6">
+                        <span className="cart-item">Item1</span>
+                        </div>
+                        <div className="col-xs-6">
+                          $99.99
+                        </div>
+                    </div>
+                    <div id="order-total">
+                      <span>Total Price:$99.99</span>
+                    </div>
+                    <button type="button" className="btn btn-primary" > Place Your Order</button>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-xs-12">
+                    <form>
+                      <input label="First Name" name="first-name" value="example name"/>
+                      <input label="Last Name" name="last-name" value="example name"/>
+                      <input label="Delivery Address"  name="address" value="example name"/>
+                      <input label="city" name="city" value="example name"/>
+                      <input label="zip" name="zip" value="example name"/>
+                      <button className="btn btn-primary">Submit</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-class Home extends Component{
+}
 
-  render(){
-    return(
-    <div>
+function Home(props){
+    return <div className="container-fluid">
       <div className="row ourstory">
         <div className="col-md-8 col-md-offset-2">
           <div className="top-image">
@@ -65,7 +110,7 @@ class Home extends Component{
           </div>
           <div className="row">
             <div className="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3" id="orderbutton">
-              <button className="orderbutton" onClick={this.handleClick}>
+              <button className="orderbutton" >
               <span> Place Your Order Online</span>
               </button>
             </div>
@@ -80,18 +125,13 @@ class Home extends Component{
 
       </footer>
     </div>
-    );
-  }
-};
+}
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-
-        </header>
-        <Home />
+        <OrderForm />
 
       </div>
     );
